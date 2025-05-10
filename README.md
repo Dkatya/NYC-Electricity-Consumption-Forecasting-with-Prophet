@@ -1,16 +1,15 @@
 # NYC-Electricity-Consumption-Forecasting-with-Prophet
 
-This repository contains a time series forecasting project that predicts New York City's electricity consumption using Facebook's Prophet model. The project analyzes daily, monthly, and yearly electricity consumption data to create accurate forecasts at different time scales.
+This repository contains a time series forecasting project that predicts New York City's electricity consumption using Facebook's Prophet model. The project analyzes monthly and yearly electricity consumption data to create accurate forecasts at different time scales.
 
 ## Project Overview
 
-This project implements a time-agnostic forecasting system that automatically detects the time unit (day, month, year) from input data and adjusts prediction horizons accordingly. The Prophet model is tuned with various parameters to optimize forecasting accuracy across different time scales.
+This project implements a time-agnostic forecasting system that automatically detects the time unit (month, year) from input data and adjusts prediction horizons accordingly. The Prophet model is tuned with various parameters to optimize forecasting accuracy across different time scales.
 
 ### Key Features
 
-- **Time-Agnostic Forecasting**: Automatically detects and adapts to daily, monthly, or yearly time series data
+- **Time-Agnostic Forecasting**: Automatically detects and adapts to monthly or yearly time series data
 - **Multi-Horizon Predictions**: 
-  - For daily data: 100, 200, and 365 days into the future
   - For monthly data: 1, 6, and 9 months into the future
   - For yearly data: 1, 3, and 5 years into the future
 - **Comprehensive Model Tuning**:
@@ -27,8 +26,7 @@ Each model is evaluated using:
 
 ## Dataset
 
-The project utilizes historical New York City electricity consumption data at three different aggregation levels:
-- Daily consumption
+The project utilizes historical New York City electricity consumption data at two different aggregation levels:
 - Monthly mean consumption (derived from daily data)
 - Yearly mean consumption (derived from daily data)
 
